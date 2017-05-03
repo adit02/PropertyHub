@@ -1,0 +1,337 @@
+﻿*
+{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+}
+
+body
+{
+    margin: 30px 0px 30px 0px;
+    /*background-image: url('Pictures/bg.jpg');*/
+    font-family:Calibri;    
+}
+
+p
+{
+    margin-bottom:10px;
+    text-align:justify;
+}
+
+a
+{
+    text-decoration: none;
+    color: #3333CC;
+}
+
+a:hover
+{
+    color: #FF0066;
+}
+
+
+/* Logo */
+
+#logo
+{
+    width: 1200px;
+    height: 100px;
+    background-image: url('Pictures/logo.png');
+}
+
+#logo #logotext
+{
+    width: 606px;
+    float: left;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #009900;
+    font-family: Calibri;
+    text-transform: uppercase;
+}
+
+/* Login Panel */
+
+#logo #login
+{
+    width:300px;
+    float:right;
+    text-align:right;
+    font-size:x-large;
+    font-family:Calibri;
+    padding-top:10px;
+    padding-right:10px;
+}
+
+#logo #logotext h1
+{   
+    font-size:3em;   
+}
+
+#logo #logotext h2
+{
+    font-size:1em;
+}
+
+/* Logo Ends Here */
+
+#menu
+{
+    width:1200px;
+    font-family:Calibri;
+    height:50px;
+    background-color:#0099FF;
+    color:White;
+    vertical-align:middle;
+    font-size:x-large;
+    margin:10px 0px 10px 0;
+}
+
+#Ad
+{
+    width:1200px;
+    height:200px;
+}
+
+
+#Content-Wrapper
+{
+    width:1200px;
+    text-align:left;
+    margin:20px 0;
+}
+
+#Content-Wrapper #LeftPanel
+{
+    width:200px;
+    float:left;
+}
+
+#Content-Wrapper #RightPanel
+{
+    width:200px;
+    float:right;
+}
+
+#Content-Wrapper #CenterPanel
+{
+    width:780px;
+    float:left;
+    padding: 0px 10px 0px 10px;
+}
+
+#Content-Wrapper #HeadLinePost
+{
+    width: 780px;
+    float: left;
+}
+
+#Content-Wrapper #HeadLineAd
+{
+    width:360px;
+    float:right;
+}
+
+
+#footer
+{
+    clear: both;
+    width: 1200px;
+    text-align: center;
+    font-size: x-large;
+    height: 20px;
+    padding: 20px 0;
+    background-image: url('Pictures/logo.png');
+}
+
+/* Boxed Style */
+
+.boxed {
+}
+
+.boxed .title
+{
+    height: 23px;
+    padding: 15px 0 0 19px;
+    background: #8CBEF5 url('Pictures/postbg.gif') repeat-x left bottom;
+    border: 1px solid #4F9CEF;
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+.boxed .subtitle
+{
+    height: 20px;
+    padding: 5px 0 0 19px;
+    background: #8CBEF5 url('Pictures/postbg.gif') repeat-x left bottom;
+    border: 1px solid #4F9CEF;
+    font-size: 1em;
+    color: #FFFFFF;
+    margin-top:2px;
+    margin-bottom:10px;
+}
+
+.boxed .content {
+	margin: 0 0 20px 0;
+	padding: 20px;
+	background: #DCEBFC;
+}
+
+/* Headline Posts */
+
+.post
+{
+	text-align:justify;
+}
+
+.post .headline
+{
+    padding:20px 20px 0px 20px;
+    font-size: 1.5em;
+    background-color: #CCCCCC;
+}
+
+
+
+.post .info
+{
+    padding:20px 20px 0px 20px;
+    background-color: #CCCCCC;
+    font-size:small;
+}
+
+
+.post .description {
+	margin: 0 0 20px 0;
+	padding: 20px;
+    background-color: #CCCCCC;
+}
+
+/* Login */
+
+#login {
+}
+
+#login fieldset {
+	border: none;
+}
+
+#login legend {
+	display: none;
+}
+
+#login h2 {
+	font-size: large;
+}
+
+#login input {
+	margin-bottom: 10px;
+	padding: 2px 5px;
+	padding-right:5px;
+	font-family: Calibri;
+	font-size:large;	
+}
+
+#login select 
+{
+	margin-bottom: 10px;
+	padding: 2px 5px;
+	padding-right:5px;
+	font-family: Calibri;
+	font-size:large;	
+	color: #385B88;
+}
+
+#login textarea
+{
+	margin-bottom: 10px;
+	padding: 2px 5px;
+	padding-right:5px;
+	font-family: Calibri;
+	font-size:large;	
+	color: #385B88;
+}
+
+#login .inputtext {
+	color: #385B88;
+}
+
+#login .inputsubmit {
+	background: #4F9CEF url('Pictures/postbg.gif') repeat-x left bottom;
+	color: #FFFFFF;
+}
+
+
+.AgentTab
+{
+    width: 230px;
+    height: 140px;
+    margin: 0px 5px 5px 0px;
+    padding: 5px 5px 5px 5px;
+    float: left;
+}
+
+.AgentTab img
+{
+    padding:0 5px 5px 5px;
+    width:100px;
+    height:100px;
+    float:left;    
+}
+
+.AgentTab h2
+{
+    padding:5px 5px 5px 5px;
+    text-transform:uppercase;
+    font-size:medium;
+}
+
+.AgentTab h3
+{
+    font-size:small;
+    margin-bottom:2px;
+}
+
+.AgentTab a
+{
+    font-size:smaller;
+}
+
+.AgentTab p
+{
+    font-size: x-small;
+    margin-right: 5px;
+}
+
+.PropertyTab
+{
+    width: 230px;
+    height: 110px;
+    margin: 0px 5px 5px 0px;
+    padding: 5px 5px 5px 5px;
+    float: left;
+}
+
+.PropertyTab h2
+{
+    padding: 5px 5px 5px 0px;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.PropertyTab h3
+{
+    font-size:small;
+    margin-bottom:2px;
+}
+
+.PropertyTab a
+{
+    font-size:smaller;
+}
+
+.PropertyTab p
+{
+    font-size: x-small;
+    margin-right: 5px;
+}

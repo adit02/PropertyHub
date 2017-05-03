@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+      <siteMapNode url="~/Home.aspx" title="Home"  description="Home" />
+      <siteMapNode url="" title="My MagicBox"  description="Manage Your Account">
+        <siteMapNode url="~/Property/ViewResponses.aspx" title="View Response"  description="Home"></siteMapNode>
+        <siteMapNode url="~/Property/ManageProperties.aspx" title="Manage Properties"  description="Home"></siteMapNode>
+        <siteMapNode url="~/Property/ManageRequirements.aspx" title="Manage Requirements"  description="Home"></siteMapNode>
+        <siteMapNode url="~/Users/ManageUsers.aspx" title="Manage Profile"  description="Home"></siteMapNode>
+        <siteMapNode url="~/Users/ChangePassword.aspx" title="Change Password"  description="Home"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Property/PostPropertyForSale.aspx" title="Post Property"  description="Post Property" />
+      <siteMapNode url="~/Property/PostRequirement.aspx" title="Post Requirement"  description="Post Requirement" />
+      <siteMapNode url="~/Agents/Agents.aspx" title="Search Agents"  description="Search Agents" />
+      <siteMapNode url="~/Property/SearchProperty.aspx" title="Search Property"  description="Search Property" />
+      <siteMapNode url="~/Decor/Decor.aspx" title="Decor"  description="Decor" />
+      <siteMapNode url="~/Contactus.aspx" title="Contact Us"  description="Contact Us" />
+    </siteMapNode>
+</siteMap>

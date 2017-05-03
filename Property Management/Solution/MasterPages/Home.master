@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="masterpages_home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../CSS/StyleSheet.css" rel="Stylesheet" type="text/css" />
+    <title></title>    
+</head>
+<body>
+    <form id="form1" runat="server">    
+
+    <center>
+
+    <!-- Top Region -->
+    
+    <div id="logo">
+        <div id="logotext">
+        <h1>Apartment Lookup</h1>
+        <h2>Buy Apartments | Sell Apartments | Rent Apartments</h2>
+        </div>
+        <div id="login">
+            <asp:MultiView ID="loginMultiView" runat="server">
+                <asp:View ID="viewLogin" runat="server">
+                    <asp:Label ID="Label8" runat="server" Text="Welcome User"></asp:Label>
+                    &nbsp;|
+                    <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/Users/Login.aspx">Login</asp:HyperLink>
+                </asp:View>
+                <asp:View ID="viewLogout" runat="server">
+                    Welcome
+                    <asp:Label ID="lblUser" runat="server"></asp:Label>
+                    &nbsp;|
+                    <asp:LinkButton ID="lbnLogout" runat="server" onclick="lbnLogout_Click">Logout</asp:LinkButton>
+                </asp:View>
+            </asp:MultiView>
+        </div>
+    </div>
+
+    <!-- End of Top Region -->
+
+    <!-- Menu -->
+    <asp:SiteMapDataSource ID="menuSiteMap" runat="server" ShowStartingNode="False" />    
+    <div id="menu">
+        <asp:Menu ID="Menu2" runat="server" 
+            DynamicHorizontalOffset="2" Height="50px" 
+            Orientation="Horizontal" RenderingMode="Table" 
+            Width="1200px" ForeColor="White" DataSourceID="menuSiteMap">
+            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#E3EAEB" />
+            <DynamicSelectedStyle BackColor="#1C5E55" />
+            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#1C5E55"/>
+              <levelmenuitemstyles>
+                  <asp:menuitemstyle BackColor="#0099FF"/>
+                  <asp:menuitemstyle BackColor="#0099FF"/>       
+              </levelmenuitemstyles>
+
+        </asp:Menu>
+    </div>
+
+    <!-- End of Main Region -->
+
+    <!-- Ad Region -->
+
+    <div id="Ad">
+        <asp:Image ID="Image1" runat="server" width="100%" Height="100%" 
+            ImageUrl="~/pictures/mainheader.jpg" />
+    </div>
+
+    <!-- End of Ad Region -->
+
+    <!-- Content Region -->
+
+    <div id="Content-Wrapper">
+        <div id="LeftPanel" class="boxed">
+            <div class="title">
+                    <asp:Label ID="Label4" runat="server" Text="Maps"></asp:Label>
+            </div>
+            <div class="content">
+                <p style="font-size:small">Don't know where to search for? Click below for Maps.</p>
+                <asp:HyperLink ID="HyperLink1" runat="server" 
+                    NavigateUrl="~/Maps/Maps.aspx?q=Delhi">Delhi</asp:HyperLink> <br />
+                <asp:HyperLink ID="HyperLink2" runat="server"
+                    NavigateUrl="~/Maps/Maps.aspx?q=New Delhi">New Delhi</asp:HyperLink> <br />
+                <asp:HyperLink ID="HyperLink3" runat="server"
+                    NavigateUrl="~/Maps/Maps.aspx?q=East Delhi">East Delhi</asp:HyperLink> <br />
+                <asp:HyperLink ID="HyperLink7" runat="server"
+                    NavigateUrl="~/Maps/Maps.aspx?q=West Delhi">West Delhi</asp:HyperLink> <br />
+                <asp:HyperLink ID="HyperLink8" runat="server"
+                    NavigateUrl="~/Maps/Maps.aspx?q=South Delhi">South Delhi</asp:HyperLink> <br />
+                <asp:HyperLink ID="HyperLink9" runat="server"
+                    NavigateUrl="~/Maps/Maps.aspx?q=South West Delhi">South West Delhi</asp:HyperLink> <br />
+                <asp:HyperLink ID="HyperLink10" runat="server"
+                    NavigateUrl="~/Maps/Maps.aspx?q=North Delhi">North Delhi</asp:HyperLink> <br />
+                <asp:HyperLink ID="HyperLink11" runat="server"
+                    NavigateUrl="~/Maps/Maps.aspx?q=North East Delhi">North East Delhi</asp:HyperLink> <br />
+                <asp:HyperLink ID="HyperLink13" runat="server"
+                    NavigateUrl="~/Maps/Maps.aspx?q=North West Delhi">North West Delhi</asp:HyperLink> <br />
+                <asp:HyperLink ID="HyperLink14" runat="server"
+                    NavigateUrl="~/Maps/Maps.aspx?q=Central Delhi">Central Delhi</asp:HyperLink> <br />
+            </div>
+
+            <div class="title">
+               Delhi Metro Map
+            </div>
+            <div class="content">
+                <asp:HyperLink ID="HyperLink15" runat="server"
+                    NavigateUrl="~/Maps/Maps.aspx?q=Delhi Metro">Delhi Metro Route</asp:HyperLink> <br />
+            </div>
+            
+            <div class="title">
+                    <asp:Label ID="Label5" runat="server" Text="Tips"></asp:Label>
+            </div>
+            <div class="content">
+                <asp:HyperLink ID="HyperLink4" runat="server" 
+                    NavigateUrl="~/Tips/Buyyertips.aspx">Buyer Tips</asp:HyperLink>
+                <br />
+                <asp:HyperLink ID="HyperLink5" runat="server" 
+                    NavigateUrl="~/Tips/SellerTips.aspx">Seller Tips</asp:HyperLink>
+                <br />
+            </div>            
+        </div>
+
+        <div id="CenterPanel">
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="RightPanel" class="boxed">
+            <div class="title">
+                Property Headlines
+            </div>
+            <div class="content" style="font-size:smaller">
+                <p><asp:HyperLink ID="Post1" runat="server" ></asp:HyperLink></p>
+                <p><asp:HyperLink ID="Post2" runat="server" ></asp:HyperLink></p>
+                <p><asp:HyperLink ID="Post3" runat="server" ></asp:HyperLink></p>
+                <p><asp:HyperLink ID="Post4" runat="server"></asp:HyperLink></p>
+                <p><asp:HyperLink ID="Post5" runat="server"></asp:HyperLink></p>
+                <p><asp:HyperLink ID="Post6" runat="server"></asp:HyperLink></p>
+                <p><asp:HyperLink ID="Post7" runat="server"></asp:HyperLink></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- End of Content Region -->
+
+    <!-- Footer -->
+    <div id="footer">
+    Developed by Durjoy Arpit Aanchal
+    </div>
+    <!-- End of Footer -->
+
+    </center>
+    </form>
+</body>
+</html>
